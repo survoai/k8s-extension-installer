@@ -1,0 +1,5 @@
+{
+  "go.alternateTools": {},
+  "go.gopath": "/opt/homebrew/Cellar/go/1.20.4/libexec",
+  "go.inferGopath": true
+}

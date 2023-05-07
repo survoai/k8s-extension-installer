@@ -1,0 +1,16 @@
+name: nginx
+description: A nginx server
+type: helm
+version: 1.0.0
+author: Vishal Saugat
+directory: helm
+inputs:
+  - name: app
+    type: string
+    required: true
+    description: Name of the label app
+  - name: port
+    type: integer
+    required: false
+    description: Name of port
+    default: 80

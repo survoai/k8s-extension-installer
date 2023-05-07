@@ -1,4 +1,4 @@
-# k8s-extensions-installer
+# Humalect Extensions Orchestrator
 
 ## Introduction
 
@@ -14,29 +14,29 @@ git clone https://github.com/example/k8s-extensions-installer.git
 ```
 2. Build the project
 ```
-./k8s-extensions-installer
-go build -o k8s-extensions-installer
+go build -o heoctl
 ```
 3. Run the utility
 ```
-./k8s-extensions-installer
+./heoctl
 ```
 ### Usage
 
 - Install an extension:
 ```
-./k8s-extensions-installer install --extension-name <extension_name> --manifest-data <manifest_data_path> --destination <destination_path> --inputs <input_variables>
+./heoctl install <extension_name> --inputs <input_variables>
+
+# Example
+./heoctl install nginx-k8s --input appname=nginx-deploy,replicas=1
 ```
-- Delete an extension:
+- Uninstall an extension:
 ```
-./k8s-extensions-installer delete --extension-name <extension_name> --manifest-data <manifest_data_path> --destination <destination_path> --inputs <input_variables>
+./heoctl uninstall <extension_name> --inputs <input_variables>
 ```
 
 ### Configuration
 
 The `k8s-extensions-installer` requires the following input parameters:
 
-- `--extension-name`: The name of the extension to be installed or deleted.
-- `--manifest-data`: The path to the manifest data file containing Kubernetes resources for the extension.
-- `--destination`: The destination path where the extension will be installed or deleted.
+- `<extension-name>`: The name of the extension to be installed or deleted.
 - `--inputs`: A map of input variables to be substituted in the manifest files.

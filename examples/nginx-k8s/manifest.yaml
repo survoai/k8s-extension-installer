@@ -1,0 +1,20 @@
+name: nginx
+description: A brief description of the extension
+type: k8s
+version: 1.0.0
+author: Vishal Saugat
+inputs:
+  - name: appname
+    type: string
+    required: true
+    description: Name of the application
+  - name: author
+    type: string
+    required: true
+    # default: vishalsaugat
+    description: Author of the application
+  - name: replicas
+    type: integer
+    required: false
+    default: 4
+    description: Number of replicas
