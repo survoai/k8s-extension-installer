@@ -24,3 +24,7 @@ type ResourceStatus struct {
 	Kind     string
 	Path     string
 }
+
+type MultiError struct {
+	Errors []error
+}
