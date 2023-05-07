@@ -21,8 +21,8 @@ func main() {
 	}
 
 	var rootCmd = &cobra.Command{
-		Use:   "k8s-extension-installer",
-		Short: "k8s-extension-installer is a CLI tool to install and uninstall Kubernetes extensions",
+		Use:   "heoctl",
+		Short: "heoctl is a CLI tool to install and uninstall Kubernetes extensions",
 	}
 
 	rootCmd.AddCommand(commands.InstallCmd)
