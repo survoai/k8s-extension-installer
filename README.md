@@ -12,7 +12,7 @@ The extensions can be founder here at [Humalect Extensions](https://github.com/H
 
 1. Clone the repository
 ```
-git clone https://github.com/Humalect/k8s-extensions-installer.git
+git clone https://github.com/Humalect/k8s-extension-installer.git
 ```
 2. Build the project
 ```
