@@ -43,7 +43,7 @@ func InstallExtension(extensionName, manifest string, inputs map[string]interfac
 	case "k8s":
 		kubernetesManifest(extensionName, manifestData, dst, inputs2, action)
 	case "terraform":
-		installTerraformModule(extensionName, manifestData, inputs2, action)
+		installTerraformModule(extensionName, manifestData, inputs2, action, repoPath)
 	case "helm":
 		installHelmChart(extensionName, manifestData, inputs2, action)
 	default:
