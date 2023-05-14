@@ -14,8 +14,8 @@ func mapToString(m map[string]interface{}) []string {
 
 	return keyValuePairs
 }
-func installTerraformModule(extensionName string, manifestData Manifest, inputs map[string]interface{}, action string, repoPath string) {
-	modulePath := fmt.Sprintf("%s/%s/terraform-module", repoPath, extensionName)
+func installTerraformModule(extensionName string, manifestData Manifest, dst string, inputs map[string]interface{}, action string) {
+	modulePath := fmt.Sprintf("%s/terraform-module", dst)
 	os.Chdir(modulePath)
 
 	cmd := exec.Command("terraform", "init")
