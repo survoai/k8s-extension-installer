@@ -45,7 +45,7 @@ func InstallExtension(extensionName, manifest string, inputs map[string]interfac
 	case "terraform":
 		installTerraformModule(extensionName, manifestData, dst, inputs2, action)
 	case "helm":
-		installHelmChart(extensionName, manifestData, inputs2, action)
+		installHelmChart(extensionName, manifestData, dst, inputs2, action)
 	default:
 		logrus.Errorf("Error: Unsupported extension type '%s'.\n", extensionType)
 	}
