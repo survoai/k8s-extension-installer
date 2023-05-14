@@ -5,8 +5,8 @@ import (
 	"os/exec"
 )
 
-func installHelmChart(extensionName string, manifestData Manifest, inputs map[string]interface{}, action string) {
-	chartPath := fmt.Sprintf("extensions/%s/helm-chart", extensionName)
+func installHelmChart(extensionName string, manifestData Manifest, dst string, inputs map[string]interface{}, action string) {
+	chartPath := fmt.Sprintf("%s/helm", dst)
 	cmd := exec.Command("helm", "install", extensionName, chartPath)
 
 	output, err := cmd.CombinedOutput()
