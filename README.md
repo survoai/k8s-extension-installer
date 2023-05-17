@@ -1,10 +1,10 @@
-# Humalect Extensions Orchestrator
+# K8s Extensions Installer
 
 ## Introduction
 
 The `k8s-extensions-installer` is a utility tool designed to simplify the installation and management of Kubernetes extensions. This tool allows users to install, update, and delete custom resources, deployments, services, and other Kubernetes objects associated with extensions easily. The `k8s-extensions-installer` supports reading Kubernetes manifest files and applying them to a Kubernetes cluster, with support for templating and variable substitution.
 
-The extensions can be founder here at [Humalect Extensions](https://github.com/Humalect/humalect-extensions)
+The extensions can be founder here at [Humalect Extensions](https://github.com/Humalect/k8s-extensions)
 
 ## Documentation
 
